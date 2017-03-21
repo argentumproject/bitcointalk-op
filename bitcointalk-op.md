@@ -150,6 +150,7 @@ CoinGecko: https://www.coingecko.com/en/coins/argentum
 Bitsquare: http;//bitsquare.io
 CoinExchange: https://www.coinexchange.io/market/ARG/BTC
 Cryptopia: https://www.cryptopia.co.nz/Exchange/?market=ARG_BTC
+Novaexchange: https://novaexchange.com/market/BTC_ARG/
 
 [b]Mining:[/b]
 https://www.whattomine.com/coins/158-arg-scrypt
