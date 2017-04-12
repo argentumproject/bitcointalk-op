@@ -1,8 +1,10 @@
+[center][color=maroon][size=16pt][b]Argentum[/b][/size][/color][/center]
 
-[center][color=maroon][size=16pt][b]Argentum[/b][/size][/color]
+
+[center][IMG]https://i.imgur.com/EALCWVS.png[/img][/center]
 
 
-[IMG]https://i.imgsafe.org/09c66e9fbf.png[/IMG]
+Version 3.11.2
 
 
 [center][color=navy][size=12pt][b]http://www.argentum.io[/b][/size][/color]
@@ -19,7 +21,14 @@ Argentum uses two cryptographic algorithms; Scrypt and SHA256D with AUXPOW suppo
 Blocks are discovered every 45 seconds and transactions are fully confirmed every 4.5 minutes. 64 Million total Argentums will be mined. Once this limit is reached, it is increased by 1.1% annually, the rate of human population growth.
 
 [b]Security:[/b] 
-Mined blocks mature after 30 confirms: Argentum is a fast currency but it does not compromise the safety of the blockchain in the process.[/center]
+Mined blocks mature after 30 confirms (100 at block 2,422,000): Argentum is a fast currency but it does not compromise the safety of the blockchain in the process.[/center]
+
+[b]Version 3.11.2[/b]
+- Update the code base to Bitcoin version 11.2 (from Myriadcoin 11.3)
+- Hard fork for coinbase maturity at Block 2,422,000. New coinbase maturity will be 100 confirmations.
+- Up to date Gitian build scripts and setup guide
+- BIP65 Soft Fork when ~>78% of nodes have upgraded
+- Minimum protocol version is 1050000
 
 [b]Version 2.4.4[/b]
 - Minimum transaction fee and minimum relay transaction fee from 0.00500000 to 0.00050000
@@ -89,10 +98,11 @@ Please feel free to contribute to any project. We're happy to have you contribut
 
 [b]Wallet Source: https://github.com/argentumproject/argentum[/b]
 Argentum Project: https://github.com/argentumproject/
-Windows QT Wallet: https://github.com/argentumproject/argentum/releases/tag/v2.4.4
-Electrum server https://github.com/argentumproject/electrum-arg-server 
+Windows QT Wallet: https://github.com/argentumproject/argentum/releases
+Electrum server https://github.com/kyuupichan/electrumx 
 Electrum client https://github.com/argentumproject/electrum-arg/releases/
 Mac QT Wallet: WIP
+Coinvault.io: https://www.coinvault.io/
 
 [b]Nodes:[/b]
 These are the current active v2.4 nodes as of 15th of October 2016.
@@ -126,11 +136,6 @@ addnode=92.3.46.14
 [b]IRC[/b]
 #ARGCurrency on FreeNode: https://webchat.freenode.net/?channels=#ARGCurrency
 
-[b]Wallets:[/b]
-Coinvault.io: https://www.coinvault.io/
-Windows QT Wallet: https://github.com/argentumproject/argentum/releases/tag/v2.4.4
-
-
 [b]Pools:[/b]
 Cryptopia: https://www.cryptopia.co.nz/Mineshaft?Algo=SHA256&Pool=ARG
 Litecoinpool.org: They merge mine, but only pay out in LTC.
@@ -154,10 +159,3 @@ Novaexchange: https://novaexchange.com/market/BTC_ARG/
 
 [b]Mining:[/b]
 https://www.whattomine.com/coins/158-arg-scrypt
-
-
-[b]Donation Addresses[/b]
-The proceeds from these donations will be used to Improve, Promote and encourage ARG services.
-
-ARG Donation Address: ATM1imaiPtFT5K8F2tsPh4RSpw7ADk9a8G
-BTC Donation Address: 1LxXw9CRunb5mJfa99aTWQMCqmbroVBUxi
