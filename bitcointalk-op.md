@@ -14,7 +14,6 @@ Version 3.11.2
 [b]Features:[/b]
 Argentum uses two cryptographic algorithms; Scrypt and SHA256D with AUXPOW support (Merged Mining)
 - Block size 10mb
-- Signature operations per block; 1,000,000, per transaction, 20,000
 - 3 Argentums per block
 
 [b]Production:[/b]
