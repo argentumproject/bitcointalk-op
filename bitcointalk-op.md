@@ -4,8 +4,6 @@
 [center][IMG]https://i.imgur.com/EALCWVS.png[/img][/center]
 
 
-Version 4.14.3
-
 
 [center][color=navy][size=12pt][b]http://www.argentum.io[/b][/size][/color]
 
