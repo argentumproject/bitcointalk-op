@@ -4,7 +4,7 @@
 [center][IMG]https://i.imgur.com/EALCWVS.png[/img][/center]
 
 
-Version 3.11.2
+Version 4.14.3
 
 
 [center][color=navy][size=12pt][b]http://www.argentum.io[/b][/size][/color]
@@ -12,15 +12,43 @@ Version 3.11.2
 
 
 [b]Features:[/b]
-Argentum uses two cryptographic algorithms; Scrypt and SHA256D with AUXPOW support (Merged Mining)
-- Block size 10mb
-- 3 Argentums per block
+Argentum uses six cryptographic algorithms; 
+- Scrypt with AUXPOW support (Merged Mining)
+- SHA256D with AUXPOW support (Merged Mining)
+- Lyra2REv2 (GPU)
+- Myriad-Groestl (GPU/ASIC)
+- Argon2d (CPU)
+- Yescrypt (CPU/GPU)
+- Max block size 10mb
+- 3 ARG per block
 
 [b]Production:[/b]
 Blocks are discovered every 45 seconds and transactions are fully confirmed every 4.5 minutes. 64 Million total Argentums will be mined. Once this limit is reached, it is increased by 1.1% annually, the rate of human population growth.
 
 [b]Security:[/b] 
-Mined blocks mature after 30 confirms (100 at block 2,422,000): Argentum is a fast currency but it does not compromise the safety of the blockchain in the process.[/center]
+Mined blocks mature after 100 confirmations[/center]
+
+[b]Argentum Version 4.14.3[/b]
+- Adds 4 new mining algorithms (Activates at block 2,977,000)
+- Lyra2re2 (GPU)
+- Myr-Groestl (GPU/ASIC)
+- Argon2d (CPU)
+- Yescrypt (CPU/GPU)
+
+[b]Argentum Version 4.14.2[/b]
+- These are just a few of the hundreds of enhancements with this new release
+
+- BIP112 (CheckSequenceVerify) soft fork
+- BIP146 Argentum will hard fork at block 2,977,000 (around March 13th 2018) to implement BIP146
+- Signature validation using libsecp256k1
+- Direct headers announcement (BIP 130)
+- Automatically use Tor hidden services
+- Notifications through ZMQ
+- BIP9 softfork deployment
+- Linux ARM builds
+- Compact Block support (BIP 152)
+- Hierarchical Deterministic Key Generation (HD wallets)
+- Substantial improvments to the client load time. 
 
 [b]Version 3.11.2[/b]
 - Update the code base to Bitcoin version 11.2 (from Myriadcoin 11.3)
@@ -69,89 +97,45 @@ This pre-mine now will no longer matter as there would seem to be in the regions
 We will move on from the past in a New Beginning for Argentum, eventually cutting ties with the original incarnation.
 
 
-[b]Current short term goals:[/b]
+[b]Current short-term goals:[/b]
 
--More pools, lots of pools. Hashrate is good, but we need wider distribution.
+-Mining diversification - adding Lyra2REv2, Myr-Groestl, Argon2d, and Yescrypt
 
--Bitsquare.io (done)
+-Coinomi Mobile wallet (awaiting merge at Coinomi's repo) They will be more likely to add if you ask them to add it
 
--Electrum Client & Server (Finished)
-
--Coinomi Mobile wallet (awaiting merge at Coinomi's repo)
-
-[b]Mid to long term:[/b]
+-Merchant integration
 
 -Poloniex
 
--Shapeshift.io
-
 -Bittrex
 
-[b]Long term:[/b]
-
--Payment processor
+-Shapeshift.io
 
 
-[b]Current release (v2.4.4):[/b] 
-Please feel free to contribute to any project. We're happy to have you contribute!
+[b]Current release (v4.14.3):[/b] 
 
-[b]Wallet Source: https://github.com/argentumproject/argentum[/b]
-Argentum Project: https://github.com/argentumproject/
-Windows QT Wallet: https://github.com/argentumproject/argentum/releases
-Electrum server https://github.com/kyuupichan/electrumx 
-Electrum client https://github.com/argentumproject/electrum-arg/releases/
-Mac QT Wallet: WIP
+Wallet Source: https://github.com/argentumproject/argentum
+Wallet: https://github.com/argentumproject/argentum/releases
 Coinvault.io: https://www.coinvault.io/
 
-[b]Nodes:[/b]
-These are the current active v2.4 nodes as of 15th of October 2016.
-
-[b]Code:[/b]  
-addnode=149.210.234.234
-addnode=157.161.128.63
-addnode=167.160.36.126
-addnode=192.99.35.133
-addnode=52.50.240.238
-addnode=54.246.128.222
-addnode=96.236.219.30
-addnode=82.29.4.122
-addnode=92.3.44.10
-addnode=92.3.34.12
-addnode=52.58.50.77
-addnode=220.178.235.214
-addnode=82.176.15.155
-addnode=82.29.4.122
-addnode=144.76.71.141
-addnode=87.98.185.244
-addnode=98.115.147.74
-addnode=162.255.117.105
-addnode=69.197.177.18
-addnode=74.111.112.108
-addnode=104.200.153.94
-addnode=46.105.63.132
-addnode=87.98.185.244
-addnode=92.3.46.14 
-
-[b]IRC[/b]
-#ARGCurrency on FreeNode: https://webchat.freenode.net/?channels=#ARGCurrency
-
 [b]Pools:[/b]
-Cryptopia: https://www.cryptopia.co.nz/Mineshaft?Algo=SHA256&Pool=ARG
 Litecoinpool.org: They merge mine, but only pay out in LTC.
-Mergemining.com: https://mergemining.com/
-Prohashing: http://www.prohashing.com/
-ZPOOL: http://www.zpool.ca/
+Mergemining.com: https://mergemining.com/ (Status unknown)
+Prohashing: http://www.prohashing.com/ (Scrypt)
+ZPOOL: http://www.zpool.ca/ (SHA256)
+Blockmunch: http://blockmunch.club/ (SHA256)
+[b]P2Pool (All Algorithms)[/b]
+  - https://github.com/argentumproject/p2pool-argentum/
 
 [b]BlockExplorer:[/b]
 CryptoID: https://chainz.cryptoid.info/arg/
-Blockexperts: https://www.blockexperts.com/arg
 
 [b]Market Info:[/b]
 CoinMarketCap: http://coinmarketcap.com/currencies/argentum/#charts
 CoinGecko: https://www.coingecko.com/en/coins/argentum
 
 [b]Exchanges:[/b]
-Bitsquare: http;//bitsquare.io
+Bitsquare: http://bitsquare.io
 CoinExchange: https://www.coinexchange.io/market/ARG/BTC
 Cryptopia: https://www.cryptopia.co.nz/Exchange/?market=ARG_BTC
 Novaexchange: https://novaexchange.com/market/BTC_ARG/
