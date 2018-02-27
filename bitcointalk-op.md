@@ -108,6 +108,7 @@ CryptoID: https://chainz.cryptoid.info/arg/
 [b]Market Info:[/b] 
 CoinMarketCap: http://coinmarketcap.com/currencies/argentum/#charts 
 CoinGecko: https://www.coingecko.com/en/coins/argentum 
+CoinHills: https://www.coinhills.com/market/arg/ 
 
 [b]Exchanges:[/b] 
 Bitsquare: http://bitsquare.io 
